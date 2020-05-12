@@ -15,16 +15,21 @@ NAME	=	libftstring.a
 STRING_METHOD = srcs/string/ft_string.c\
 				srcs/string/ft_clear_string.c\
 
-SRCS 	=	srcs/ft_parse.c\
-			srcs/ft_clear.c\
-			srcs/ft_move_until.c\
-			srcs/ft_parse.c\
-			srcs/ft_str_isequal.c\
-			srcs/ft_strlen.c\
-			srcs/ft_strncmp.c\
-			srcs/ft_memcpy.c\
-			srcs/ft_memmove.c\
-			srcs/ft_strdup.c\
+SRCS 	=		srcs/string/ft_clear_string.c\
+            	srcs/string/ft_string.c\
+            	srcs/functions/ft_append.c\
+            	srcs/functions/ft_parse.c\
+            	srcs/functions/ft_move_until.c\
+            	srcs/functions/ft_prepend.c\
+            	srcs/functions/ft_str_isequal.c\
+            	srcs/functions/ft_strlen.c\
+            	srcs/dependencies/ft_clear.c\
+            	srcs/dependencies/ft_strncmp.c\
+            	srcs/dependencies/ft_memmove.c\
+            	srcs/dependencies/ft_memcpy.c\
+            	srcs/dependencies/ft_strdup.c\
+            	srcs/includes/libft_string.h\
+            	srcs/includes/string_object.h
 
 OBJS    = 	$(SRCS:.c=.o)
 
