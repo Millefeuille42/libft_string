@@ -6,7 +6,7 @@
 #    By: dboyer <dboyer@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/11/13 18:42:28 by dboyer            #+#    #+#              #
-#    Updated: 2020/05/12 20:31:52 by dboyer           ###   ########.fr        #
+#    Updated: 2020/05/12 20:52:25 by dboyer           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,6 +17,7 @@ STRING_METHOD = srcs/string/ft_string.c\
 				srcs/string/ft_push_string.c\
 				srcs/string/ft_string_up.c\
 				srcs/string/ft_prepend.c\
+				srcs/string/ft_string_low.c\
 
 SRCS 	=		srcs/functions/ft_parse.c\
             	srcs/functions/ft_move_until.c\

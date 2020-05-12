@@ -6,7 +6,7 @@
 /*   By: dboyer <dboyer@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/12 19:08:35 by dboyer            #+#    #+#             */
-/*   Updated: 2020/05/12 20:40:36 by dboyer           ###   ########.fr       */
+/*   Updated: 2020/05/12 20:51:33 by dboyer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@ static inline void init_string(t_string *this)
 	this->upper = ft_string_up;
 	this->prepend_char = ft_prepend_char;
 	this->prepend_string = ft_prepend_string;
+	this->lower = ft_string_low;
 }
 
 t_string ft_string(char *str)
