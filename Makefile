@@ -16,10 +16,9 @@ STRING_METHOD = srcs/string/ft_string.c\
 				srcs/string/ft_clear_string.c\
 				srcs/string/ft_push_string.c\
 				srcs/string/ft_string_up.c\
-				srcs/functions/ft_prepend.c\
+				srcs/string/ft_prepend.c\
 
-SRCS 	=		srcs/string/ft_string.c\
-            	srcs/functions/ft_parse.c\
+SRCS 	=		srcs/functions/ft_parse.c\
             	srcs/functions/ft_move_until.c\
             	srcs/functions/ft_str_isequal.c\
             	srcs/functions/ft_strlen.c\
@@ -28,13 +27,13 @@ SRCS 	=		srcs/string/ft_string.c\
             	srcs/dependencies/ft_memmove.c\
             	srcs/dependencies/ft_memcpy.c\
             	srcs/dependencies/ft_strdup.c\
-            	srcs/ft_strlcpy.c\
-                srcs/ft_strlcat.c\
-                srcs/ft_strjoin.c\
-                srcs/ft_isupper.c\
-                srcs/ft_islower.c\
-                srcs/ft_toupper.c\
-                srcs/ft_tolower.c\
+            	srcs/dependencies/ft_strlcpy.c\
+                srcs/dependencies/ft_strlcat.c\
+                srcs/dependencies/ft_strjoin.c\
+                srcs/dependencies/ft_isupper.c\
+                srcs/dependencies/ft_islower.c\
+                srcs/dependencies/ft_toupper.c\
+                srcs/dependencies/ft_tolower.c\
             	srcs/includes/libft_string.h\
             	srcs/includes/string_object.h
 

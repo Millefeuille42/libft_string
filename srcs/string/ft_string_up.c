@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "string_object.h"
+#include "../includes/libft_string.h"
 
 void ft_string_up(t_string *string)
 {

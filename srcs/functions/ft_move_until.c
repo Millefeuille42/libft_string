@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft_string.h"
+#include "../includes/libft_string.h"
 
 char *ft_move_until(char *str, char *bool, int (*f)(int))
 {

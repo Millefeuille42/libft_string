@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft_string.h"
+#include "../includes/libft_string.h"
 
 inline int	ft_isupper(int c)
 {
