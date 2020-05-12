@@ -6,7 +6,7 @@
 #    By: dboyer <dboyer@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/11/13 18:42:28 by dboyer            #+#    #+#              #
-#    Updated: 2020/05/12 19:34:10 by dboyer           ###   ########.fr        #
+#    Updated: 2020/05/12 20:31:52 by dboyer           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,6 +14,8 @@ NAME	=	libftstring.a
 
 STRING_METHOD = srcs/string/ft_string.c\
 				srcs/string/ft_clear_string.c\
+				srcs/string/ft_push_string.c\
+				srcs/string/ft_string_up.c\
 
 SRCS 	=	srcs/ft_parse.c\
 			srcs/ft_clear.c\
@@ -25,6 +27,13 @@ SRCS 	=	srcs/ft_parse.c\
 			srcs/ft_memcpy.c\
 			srcs/ft_memmove.c\
 			srcs/ft_strdup.c\
+			srcs/ft_strlcpy.c\
+			srcs/ft_strlcat.c\
+			srcs/ft_strjoin.c\
+			srcs/ft_isupper.c\
+			srcs/ft_islower.c\
+			srcs/ft_toupper.c\
+			srcs/ft_tolower.c\
 
 OBJS    = 	$(SRCS:.c=.o)
 

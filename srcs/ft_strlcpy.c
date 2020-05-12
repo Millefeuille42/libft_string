@@ -1,25 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dboyer <dboyer@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/05/12 19:19:00 by dboyer            #+#    #+#             */
-/*   Updated: 2020/05/12 20:36:17 by dboyer           ###   ########.fr       */
+/*   Created: 2019/11/06 17:17:41 by dboyer            #+#    #+#             */
+/*   Updated: 2020/05/12 19:57:17 by dboyer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "./includes/string_object.h"
-#include <stdio.h>
+#include "libft_string.h"
 
-int main(void)
+size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
-	t_string string = ft_string("ceci est un test");
-	printf("size = %zu -- content = %s\n",string.size, string.content);
-	string.push(&string, " ok!");
-	string.up(&string);
-	printf("size = %zu -- content = %s\n",string.size, string.content);
-	string.clear(&string);
+	size_t	i;
+
+	if (dst != NULL && src != NULL)
+	{
+		i = 0;
+		if (dstsize == 0)
+			return (ft_strlen(src));
+		while (src[i] && i < dstsize - 1)
+		{
+			dst[i] = src[i];
+			i++;
+		}
+		dst[i] = '\0';
+		return (ft_strlen(src));
+	}
 	return (0);
 }

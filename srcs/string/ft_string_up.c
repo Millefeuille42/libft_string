@@ -1,25 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_string_up.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dboyer <dboyer@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/05/12 19:19:00 by dboyer            #+#    #+#             */
-/*   Updated: 2020/05/12 20:36:17 by dboyer           ###   ########.fr       */
+/*   Created: 2020/05/12 20:28:15 by dboyer            #+#    #+#             */
+/*   Updated: 2020/05/12 20:37:48 by dboyer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "./includes/string_object.h"
-#include <stdio.h>
+#include "string_object.h"
 
-int main(void)
+void ft_string_up(t_string *string)
 {
-	t_string string = ft_string("ceci est un test");
-	printf("size = %zu -- content = %s\n",string.size, string.content);
-	string.push(&string, " ok!");
-	string.up(&string);
-	printf("size = %zu -- content = %s\n",string.size, string.content);
-	string.clear(&string);
-	return (0);
+	int i;
+
+	i = -1;
+	while (string->content[++i])
+		string->content[i] = ft_toupper(string->content[i]);
 }

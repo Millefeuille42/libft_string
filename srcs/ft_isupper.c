@@ -1,25 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_isupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dboyer <dboyer@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/05/12 19:19:00 by dboyer            #+#    #+#             */
-/*   Updated: 2020/05/12 20:36:17 by dboyer           ###   ########.fr       */
+/*   Created: 2020/01/02 12:07:05 by dboyer            #+#    #+#             */
+/*   Updated: 2020/05/12 20:24:02 by dboyer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "./includes/string_object.h"
-#include <stdio.h>
+#include "libft_string.h"
 
-int main(void)
+inline int	ft_isupper(int c)
 {
-	t_string string = ft_string("ceci est un test");
-	printf("size = %zu -- content = %s\n",string.size, string.content);
-	string.push(&string, " ok!");
-	string.up(&string);
-	printf("size = %zu -- content = %s\n",string.size, string.content);
-	string.clear(&string);
-	return (0);
+	return (c >= 'A' && c <= 'Z');
 }
