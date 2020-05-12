@@ -6,13 +6,13 @@
 /*   By: dboyer <dboyer@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/12 19:54:36 by dboyer            #+#    #+#             */
-/*   Updated: 2020/05/12 20:02:10 by dboyer           ###   ########.fr       */
+/*   Updated: 2020/05/12 22:04:40 by mlabouri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft_string.h"
 
-void ft_push_string(t_string *string, char* str)
+void	ft_push_string(t_string *string, char *str)
 {
 	char *tmp;
 

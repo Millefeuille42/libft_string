@@ -6,16 +6,16 @@
 /*   By: dboyer <dboyer@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/12 18:53:46 by dboyer            #+#    #+#             */
-/*   Updated: 2020/05/12 20:52:14 by dboyer           ###   ########.fr       */
+/*   Updated: 2020/05/12 22:04:40 by mlabouri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef STRING_OBJECT_H
-#define STRING_OBJECT_H
+# define STRING_OBJECT_H
 
-#include "libft_string.h"
+# include "libft_string.h"
 
-typedef struct s_string
+typedef struct	s_string
 {
 	size_t	size;
 	char	*content;
@@ -39,7 +39,7 @@ void	ft_prepend_string(struct s_string *str, const char *new_str);
 **
 */
 
-t_string	ft_string(char *str); /* Function that initializes a string */
+t_string	ft_string(char *str);							/* Function that initializes a string */
 void		ft_clear_string(t_string *string);
 void		ft_push_string(t_string *string, char *str);	/* Method that add more characters to a string*/
 void		ft_string_up(t_string *string);					/* Method that capitalize a string */

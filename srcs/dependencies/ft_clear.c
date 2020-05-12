@@ -3,16 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ft_clear.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: millefeuille </var/spool/mail/millefe      +#+  +:+       +#+        */
+/*   By: mlabouri <mlabouri@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/05/10 16:40:18 by millefeui         #+#    #+#             */
-/*   Updated: 2020/05/10 16:43:00 by millefeui        ###   ########.fr       */
+/*   Created: 2020/05/12 22:04:39 by mlabouri          #+#    #+#             */
+/*   Updated: 2020/05/12 22:04:39 by mlabouri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-//
-// Created by millefeuille on 10/05/2020.
-//
 
 #include "../includes/libft_string.h"
 

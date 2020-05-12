@@ -6,13 +6,13 @@
 /*   By: dboyer <dboyer@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/12 19:08:35 by dboyer            #+#    #+#             */
-/*   Updated: 2020/05/12 20:51:33 by dboyer           ###   ########.fr       */
+/*   Updated: 2020/05/12 22:04:40 by mlabouri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/string_object.h"
 
-static inline void init_string(t_string *this)
+static inline void	init_string(t_string *this)
 {
 	this->clear = ft_clear_string;
 	this->push = ft_push_string;
@@ -22,7 +22,7 @@ static inline void init_string(t_string *this)
 	this->lower = ft_string_low;
 }
 
-t_string ft_string(char *str)
+t_string			ft_string(char *str)
 {
 	t_string this;
 
