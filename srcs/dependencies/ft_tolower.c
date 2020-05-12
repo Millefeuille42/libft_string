@@ -1,25 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dboyer <dboyer@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/05/12 19:19:00 by dboyer            #+#    #+#             */
-/*   Updated: 2020/05/12 20:40:43 by dboyer           ###   ########.fr       */
+/*   Created: 2019/11/06 17:23:53 by dboyer            #+#    #+#             */
+/*   Updated: 2020/05/12 20:23:59 by dboyer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "./includes/string_object.h"
-#include <stdio.h>
+#include "libft_string.h"
 
-int main(void)
+inline int	ft_tolower(int c)
 {
-	t_string string = ft_string("ceci est un test");
-	printf("size = %zu -- content = %s\n",string.size, string.content);
-	string.push(&string, " ok!");
-	string.upper(&string);
-	printf("size = %zu -- content = %s\n",string.size, string.content);
-	string.clear(&string);
-	return (0);
+	if (ft_isupper(c))
+		return ('a' + (c - 'A'));
+	return (c);
 }

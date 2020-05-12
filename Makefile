@@ -6,7 +6,7 @@
 #    By: dboyer <dboyer@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/11/13 18:42:28 by dboyer            #+#    #+#              #
-#    Updated: 2020/05/12 19:34:10 by dboyer           ###   ########.fr        #
+#    Updated: 2020/05/12 20:31:52 by dboyer           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,13 +14,13 @@ NAME	=	libftstring.a
 
 STRING_METHOD = srcs/string/ft_string.c\
 				srcs/string/ft_clear_string.c\
+				srcs/string/ft_push_string.c\
+				srcs/string/ft_string_up.c\
+				srcs/functions/ft_prepend.c\
 
-SRCS 	=		srcs/string/ft_clear_string.c\
-            	srcs/string/ft_string.c\
-            	srcs/functions/ft_append.c\
+SRCS 	=		srcs/string/ft_string.c\
             	srcs/functions/ft_parse.c\
             	srcs/functions/ft_move_until.c\
-            	srcs/functions/ft_prepend.c\
             	srcs/functions/ft_str_isequal.c\
             	srcs/functions/ft_strlen.c\
             	srcs/dependencies/ft_clear.c\
@@ -28,6 +28,13 @@ SRCS 	=		srcs/string/ft_clear_string.c\
             	srcs/dependencies/ft_memmove.c\
             	srcs/dependencies/ft_memcpy.c\
             	srcs/dependencies/ft_strdup.c\
+            	srcs/ft_strlcpy.c\
+                srcs/ft_strlcat.c\
+                srcs/ft_strjoin.c\
+                srcs/ft_isupper.c\
+                srcs/ft_islower.c\
+                srcs/ft_toupper.c\
+                srcs/ft_tolower.c\
             	srcs/includes/libft_string.h\
             	srcs/includes/string_object.h
 
