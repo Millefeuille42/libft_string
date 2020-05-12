@@ -6,7 +6,7 @@
 /*   By: dboyer <dboyer@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/10 16:40:18 by millefeui         #+#    #+#             */
-/*   Updated: 2020/05/12 18:32:47 by dboyer           ###   ########.fr       */
+/*   Updated: 2020/05/12 19:38:00 by dboyer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,17 +17,23 @@
 
 void	clear(char **pstr);
 
+void	*ft_memcpy(void *dst, const void *src, size_t n);
+void	*ft_memmove(void *dst, const void *src, size_t len);
+
 char	**ft_parse(char *str, char del);
-
-char	*ft_append_char(char **str, char c);
+char	**ft_list_append(char **str_lst, char c);
 char	**ft_list_append_char(char **str_lst, char c);
-char	*ft_append_string(char **str, const char *new_str);
 char	**ft_list_append_string(char **str_lst, const char *new_str);
-
-char	*ft_prepend_char(char **str, char c);
 char	**ft_list_prepend_char(char **str_lst, char c);
-char	*ft_prepend_string(char **str, const char *new_str);
 char	**ft_list_prepend_string(char **str_lst, const char *new_str);
+
+char	*ft_append(char **str, char c);
+char	*ft_move_until(char *str, char *bool, int (*f)(int));
+char	*ft_strdup(const char *s1);
+char	*ft_append_char(char **str, char c);
+char	*ft_append_string(char **str, const char *new_str);
+char	*ft_prepend_char(char **str, char c);
+char	*ft_prepend_string(char **str, const char *new_str);
 
 size_t	count_lines(const char *str, char del);
 size_t	ft_strlen(const char *str);
