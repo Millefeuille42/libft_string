@@ -35,7 +35,6 @@ char	*ft_append_string(char **str, const char *new_str);
 char	*ft_prepend_char(char **str, char c);
 char	*ft_prepend_string(char **str, const char *new_str);
 
-
 size_t	count_lines(const char *str, char del);
 size_t	ft_strlen(const char *str);
 

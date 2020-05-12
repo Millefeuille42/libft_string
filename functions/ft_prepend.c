@@ -2,7 +2,7 @@
 // Created by millefeuille on 12/05/2020.
 //
 
-#include "libft_string.h"
+#include "../includes/libft_string.h"
 
 char	*ft_prepend_char(char **str, char c)
 {
