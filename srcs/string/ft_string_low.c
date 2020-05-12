@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "string_object.h"
+#include "../includes/libft_string.h"
 
 void ft_string_low(t_string *string)
 {
@@ -18,5 +18,5 @@ void ft_string_low(t_string *string)
 
 	i = -1;
 	while (string->content[++i])
-		string->content[i] = ft_tolower(string->content[i]);
+		string->content[i] = (char)ft_tolower(string->content[i]);
 }

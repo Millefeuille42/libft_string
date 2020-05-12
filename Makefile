@@ -35,8 +35,6 @@ SRCS 	=		srcs/functions/ft_parse.c\
                 srcs/dependencies/ft_islower.c\
                 srcs/dependencies/ft_toupper.c\
                 srcs/dependencies/ft_tolower.c\
-            	srcs/includes/libft_string.h\
-            	srcs/includes/string_object.h
 
 OBJS    = 	$(SRCS:.c=.o)
 
