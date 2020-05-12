@@ -11,8 +11,7 @@ void	ft_prepend_char(struct s_string *this, char c)
 
 	if (!this->content || !this->content[0])
 		return ;
-	i = (int)ft_strlen(this->content) + 2;
-	if (!(ret = malloc(sizeof(char) * i)))
+	if (!(ret = malloc(sizeof(char) * (this->size + 2))))
 		return ;
 	i = 0;
 	ret[i] = c;
@@ -23,6 +22,7 @@ void	ft_prepend_char(struct s_string *this, char c)
 	}
 	ret[i + 2] = 0;
 	this->clear(this);
+	this->size = ft_strlen(ret);
 	this->content = ret;
 }
 
@@ -34,9 +34,8 @@ void	ft_prepend_string(struct s_string *this, const char *new_str)
 
 	if (!this->content || !this->content[0] || !new_str || !new_str[0])
 		return ;
-	i = (int)ft_strlen(this->content);
 	i2 = (int)ft_strlen(new_str);
-	if (!(ret = malloc(sizeof(char) * (i + i2 + 1))))
+	if (!(ret = malloc(sizeof(char) * (this->size + i2 + 1))))
 		return ;
 	i = 0;
 	while (new_str[i])
@@ -52,5 +51,6 @@ void	ft_prepend_string(struct s_string *this, const char *new_str)
 	}
 	ret[i2 + i] = '\0';
 	this->clear(this);
+	this->size = ft_strlen(ret);
 	this->content = ret;
 }

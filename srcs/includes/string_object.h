@@ -6,7 +6,7 @@
 /*   By: dboyer <dboyer@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/12 18:53:46 by dboyer            #+#    #+#             */
-/*   Updated: 2020/05/12 19:33:42 by dboyer           ###   ########.fr       */
+/*   Updated: 2020/05/12 20:38:20 by dboyer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,10 +21,10 @@ typedef struct s_string
 	char	*content;
 
 	void	(*clear)(struct s_string *);
-	void	(*append_char)(struct s_string *, char);
 	void	(*prepend_char)(struct s_string *, char);
-	void	(*append_string)(struct s_string *, const char *);
 	void	(*prepend_string)(struct s_string *, const char *);
+	void	(*push)(struct s_string *, char *);
+	void	(*upper)(struct s_string *);
 
 }				t_string;
 
@@ -32,9 +32,7 @@ typedef struct s_string
 ** All methods for string manipulation will be here
 */
 
-void	ft_append_char(struct s_string *str, char c);
 void	ft_prepend_char(struct s_string *str, char c);
-void	ft_append_string(struct s_string *str, const char *new_str);
 void	ft_prepend_string(struct s_string *str, const char *new_str);
 
 /*
@@ -42,7 +40,7 @@ void	ft_prepend_string(struct s_string *str, const char *new_str);
 */
 
 t_string	ft_string(char *str); /* Function that initializes a string */
-
 void		ft_clear_string(t_string *string);
-
+void		ft_push_string(t_string *string, char *str);	/* Method that add more characters to a string*/
+void		ft_string_up(t_string *string);					/* Method that capitalize a string */
 #endif
