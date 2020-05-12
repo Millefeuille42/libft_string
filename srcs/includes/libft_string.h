@@ -13,20 +13,10 @@
 #ifndef LIBFT_STRING_H
 # define LIBFT_STRING_H
 
-# include "string_object.h"
 # include <stdlib.h>
+# include "string_object.h"
 
 char	**ft_parse(char *str, char del);
-
-char	*ft_append_char(char **str, char c);
-char	*ft_append_string(char **str, const char *new_str);
-char	**ft_list_append_char(char **str_lst, char c);
-char	**ft_list_append_string(char **str_lst, const char *new_str);
-
-char	*ft_prepend_char(char **str, char c);
-char	*ft_prepend_string(char **str, const char *new_str);
-char	**ft_list_prepend_char(char **str_lst, char c);
-char	**ft_list_prepend_string(char **str_lst, const char *new_str);
 
 char	*ft_move_until(char *str, char *bool, int (*f)(int));
 int		ft_str_isequal(char *str1, char *str2);

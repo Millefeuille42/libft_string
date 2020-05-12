@@ -4,54 +4,40 @@
 
 #include "../includes/libft_string.h"
 
-char	*ft_prepend_char(char **str, char c)
+void	ft_prepend_char(struct s_string *this, char c)
 {
 	int		i;
 	char	*ret;
 
-	if (!(*str) || !(*str)[0])
-		return (0);
-	i = (int)ft_strlen(*str) + 2;
+	if (!this->content || !this->content[0])
+		return ;
+	i = (int)ft_strlen(this->content) + 2;
 	if (!(ret = malloc(sizeof(char) * i)))
-		return (NULL);
+		return ;
 	i = 0;
 	ret[i] = c;
-	while ((*str)[i])
+	while (this->content[i])
 	{
-		ret[i + 1] = (*str)[i];
+		ret[i + 1] = this->content[i];
 		i++;
 	}
 	ret[i + 2] = 0;
-	free(*str);
-	return (ret);
+	this->clear(this);
+	this->content = ret;
 }
 
-char	**ft_list_prepend_char(char **strs, char c)
-{
-	int i;
-
-	i = 0;
-	while (strs[i])
-	{
-		if (!(strs[i] = ft_prepend_char(&strs[i], c)))
-			return (NULL);
-		i++;
-	}
-	return (strs);
-}
-
-char	*ft_prepend_string(char **str, const char *new_str)
+void	ft_prepend_string(struct s_string *this, const char *new_str)
 {
 	int		i;
 	int		i2;
 	char	*ret;
 
-	if (!(*str) || !(*str)[0] || !new_str || !new_str[0])
-		return (0);
-	i = (int)ft_strlen(*str);
+	if (!this->content || !this->content[0] || !new_str || !new_str[0])
+		return ;
+	i = (int)ft_strlen(this->content);
 	i2 = (int)ft_strlen(new_str);
 	if (!(ret = malloc(sizeof(char) * (i + i2 + 1))))
-		return (NULL);
+		return ;
 	i = 0;
 	while (new_str[i])
 	{
@@ -59,26 +45,12 @@ char	*ft_prepend_string(char **str, const char *new_str)
 		i++;
 	}
 	i2 = 0;
-	while ((*str)[i2])
+	while (this->content[i2])
 	{
-		ret[i2 + i] = (*str)[i2];
+		ret[i2 + i] = this->content[i2];
 		i2++;
 	}
 	ret[i2 + i] = '\0';
-	free(*str);
-	return (ret);
-}
-
-char	**ft_list_prepend_string(char **str_lst, const char *new_str)
-{
-	int i;
-
-	i = 0;
-	while (str_lst[i])
-	{
-		if (!(str_lst[i] = ft_prepend_string(&str_lst[i], new_str)))
-			return (NULL);
-		i++;
-	}
-	return (str_lst);
+	this->clear(this);
+	this->content = ret;
 }
