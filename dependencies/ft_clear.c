@@ -14,7 +14,7 @@
 // Created by millefeuille on 10/05/2020.
 //
 
-#include "libft_string.h"
+#include "../includes/libft_string.h"
 
 static void			safe_free(void **element)
 {

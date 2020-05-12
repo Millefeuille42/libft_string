@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft_string.h"
+#include "../includes/libft_string.h"
 
 int ft_str_isequal(char *str1, char *str2 )
 {

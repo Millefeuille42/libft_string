@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft_string.h"
+#include "../includes/libft_string.h"
 
 char	*ft_append_char(char **str, char c)
 {

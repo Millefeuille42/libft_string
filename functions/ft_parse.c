@@ -14,7 +14,7 @@
 // Created by millefeuille on 10/05/2020.
 //
 
-#include "libft_string.h"
+#include "../includes/libft_string.h"
 
 inline static char		*ft_copy(const char *src, char del)
 {
