@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_clear.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: millefeuille </var/spool/mail/millefe      +#+  +:+       +#+        */
+/*   By: dboyer <dboyer@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/10 16:40:18 by millefeui         #+#    #+#             */
-/*   Updated: 2020/05/10 16:43:00 by millefeui        ###   ########.fr       */
+/*   Updated: 2020/05/12 19:03:45 by dboyer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,12 +15,6 @@
 //
 
 #include "libft_string.h"
-
-static void			safe_free(void **element)
-{
-	if (element && *element)
-		free(*element);
-}
 
 void				clear(char **pstr)
 {
