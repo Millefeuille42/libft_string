@@ -42,11 +42,11 @@ STRING_METHOD_OBJS = $(STRING_METHOD:.c=.o)
 
 HEADERS =	-I ./includes/
 
-CFLAGS  = -Werror -Wall -Wextra -O3 ${HEADERS} 
+CFLAGS  = -Werror -Wall -Wextra -Wall -Wextra -Werror -std=c99 -pedantic-errors -Ofast ${HEADERS}
 
 CC              = clang
 
-RM      =       rm -f
+RM     			= rm -f
 
 INCS = ./includes/libft_string.h\
 		./includes/string_object.h

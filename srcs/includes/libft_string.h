@@ -6,7 +6,7 @@
 /*   By: dboyer <dboyer@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/10 16:40:18 by millefeui         #+#    #+#             */
-/*   Updated: 2020/05/12 22:04:40 by mlabouri         ###   ########.fr       */
+/*   Updated: 2020/05/18 10:58:51 by mlabouri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);
 
 char	*ft_strdup(const char *s1);
+char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 void	*ft_memcpy(void *dst, const void *src, size_t n);
 void	*ft_memmove(void *dst, const void *src, size_t len);
 void	clear(char **pstr);

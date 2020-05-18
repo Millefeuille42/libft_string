@@ -1,42 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_prepend.c                                       :+:      :+:    :+:   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mlabouri <mlabouri@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/05/12 22:03:49 by mlabouri          #+#    #+#             */
+/*   Created: 2020/05/18 10:58:51 by mlabouri          #+#    #+#             */
 /*   Updated: 2020/05/18 10:58:51 by mlabouri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft_string.h"
 
-void	ft_prepend(struct s_string *this, const char *new_str)
+char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
-	int		i;
-	int		i2;
-	char	*ret;
+	size_t n;
 
-	if (!this->content || !this->content[0] || !new_str || !new_str[0])
-		return ;
-	i2 = (int)ft_strlen(new_str);
-	if (!(ret = malloc(sizeof(char) * (this->size + i2 + 1))))
-		return ;
-	i = 0;
-	while (new_str[i])
+	if (haystack != NULL && needle != NULL && *needle)
 	{
-		ret[i] = new_str[i];
-		i++;
+		n = ft_strlen(needle);
+		while (*haystack && len-- >= n)
+		{
+			if (ft_strncmp(haystack, needle, n) == 0)
+				return ((char *)haystack);
+			haystack++;
+		}
+		return (NULL);
 	}
-	i2 = 0;
-	while (this->content[i2])
-	{
-		ret[i2 + i] = this->content[i2];
-		i2++;
-	}
-	ret[i2 + i] = '\0';
-	this->clear(this);
-	this->size = ft_strlen(ret);
-	this->content = ret;
+	return ((char *)haystack);
 }
