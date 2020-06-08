@@ -18,6 +18,8 @@ STRING_METHOD = srcs/string/ft_string.c\
 				srcs/string/ft_string_up.c\
 				srcs/string/ft_prepend.c\
 				srcs/string/ft_string_low.c\
+				srcs/string/ft_delete.c\
+				srcs/string/ft_replace.c\
 
 SRCS 	=		srcs/functions/ft_parse.c\
             	srcs/functions/ft_move_until.c\
@@ -28,6 +30,7 @@ SRCS 	=		srcs/functions/ft_parse.c\
             	srcs/dependencies/ft_memmove.c\
             	srcs/dependencies/ft_memcpy.c\
             	srcs/dependencies/ft_strdup.c\
+            	srcs/dependencies/ft_strnstr.c\
             	srcs/dependencies/ft_strlcpy.c\
                 srcs/dependencies/ft_strlcat.c\
                 srcs/dependencies/ft_strjoin.c\
